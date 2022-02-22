@@ -15,9 +15,9 @@ data_producer = KafkaProducer(
 dataFrame = pd.read_csv("dataset.csv", sep=";")
 
 # Transform dataframe to a dictionary
-def to_dictionary(data):
-    data.set_index("ID", drop=True, inplace=True)
-    dictionary = data.to_dict(orient="index")
+def to_dictionary(df_var):
+    df_var.set_index("ID", drop=True, inplace=True)
+    dictionary = df_var.to_dict(orient="index")
     return dictionary
 
 
