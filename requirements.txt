@@ -1,0 +1,9 @@
+kafka-python==2.0.2
+numpy==1.22.2
+pandas==1.4.0
+pymongo==4.0.1
+pytest
+click
+pylint
+pytest-cov
+black==21.9b0
