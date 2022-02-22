@@ -15,9 +15,12 @@ jobs:
     - name: Format
       run: |
         make format
-    - name: Lint
+    - name: Lint Consumer
       run: |
-        make lint
+        make lint_consumer
+    - name: Lint Producer
+      run: |
+        make lint_producer
     #- name: Test
     #  run: |
     #    make test
